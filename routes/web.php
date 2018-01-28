@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+$this->get('/', 'StaticPageController@getHome');
+
+$this->get('about', 'StaticPageController@getAbout');
+
+$this->get('contact', 'StaticPageController@getContact');
