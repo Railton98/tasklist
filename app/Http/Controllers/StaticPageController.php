@@ -16,6 +16,14 @@ class StaticPageController extends Controller
       return view('website.contact');
     }
 
+    public function postContact(Request $request)
+    {
+      $name = $request->name;
+      $email = $request->email;
+      $phone = $request->phone;
+      $message = $request->message;
+    }
+
     public function getAbout()
     {
       $name = 'Railton Teck\'s';
