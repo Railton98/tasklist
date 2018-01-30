@@ -11,8 +11,8 @@
 |
 */
 
-$this->get('/', 'StaticPageController@getHome');
+$this->get('/', 'StaticPageController@getHome')->name('home');
 
-$this->get('about', 'StaticPageController@getAbout');
+$this->get('about', 'StaticPageController@getAbout')->name('about');
 
-$this->get('contact', 'StaticPageController@getContact');
+$this->get('contact', 'StaticPageController@getContact')->name('contact');

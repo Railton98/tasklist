@@ -18,7 +18,15 @@ class StaticPageController extends Controller
 
     public function getAbout()
     {
-      return view('website.about');
+      $name = 'Railton Teck\'s';
+      $email = 'teck@teck.com';
+
+      $teck  = [
+        'name' => $name,
+        'email' => $email,
+      ];
+
+      return view('website.about', compact('teck'));
     }
-    
+
 }
