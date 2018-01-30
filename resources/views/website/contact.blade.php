@@ -19,6 +19,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
+
+          @include('partials.messages')
+
           <h2>Formulário</h2>
           <hr>
           <form action="{{ route('contact.send') }}" method="POST">
@@ -33,7 +36,7 @@
               <input type="text" name="phone" placeholder="Telefone:" class="form-control">
             </div>
             <div class="form-group">
-              <textarea name="message" rows="10" cols="30" class="form-control"></textarea>
+              <textarea name="bodyMessage" rows="10" cols="30" class="form-control"></textarea>
             </div>
             <div class="form-group">
               <input type="submit" value="Enviar" class="btn btn-success">
